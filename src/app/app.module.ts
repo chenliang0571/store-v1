@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
+import { HeroesComponent } from './heroes/heroes.component';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +23,12 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductListComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot([

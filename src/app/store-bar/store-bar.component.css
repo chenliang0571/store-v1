@@ -1,4 +1,6 @@
 mat-card {
     max-width: 400px;
     margin: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }

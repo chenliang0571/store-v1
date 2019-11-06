@@ -1,0 +1,19 @@
+
+.food-image {
+    background-image: url('/assets/images/food.webp');
+    background-size: cover;
+}
+
+.drink-image {
+    background-image: url('/assets/images/drink.webp');
+    background-size: cover;
+}
+
+.fruit-image {
+    background-image: url('/assets/images/fruit.webp');
+    background-size: cover;
+}
+
+.tile-align {
+    vertical-align: bottom;
+}

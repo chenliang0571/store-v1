@@ -1,0 +1,7 @@
+<mat-grid-list cols="4" rowHeight="1:1">
+    <mat-grid-tile
+        *ngFor="let category of categories"
+        [class]="category.image + defaultTile">
+      {{category.text}}
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LbsService } from '../lbs.service';
 
 @Component({
   selector: 'app-location-bar',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private lbsService: LbsService
+  ) { }
 
-  ngOnInit() {
+  public ngOnInit(): void {
+    this.getLocation();
   }
 
+  getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position: Position) => {
+        this.lbsService.setPosition(position);
+      },
+        (error: PositionError) => console.log(error));
+    } else {
+      alert('Geolocation is not supported by this browser.');
+    }
+  }
 }

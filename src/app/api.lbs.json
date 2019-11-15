@@ -1,0 +1,69 @@
+[
+    {
+        "place_id": 160734332,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 379034890,
+        "boundingbox": [
+            "51.4796338",
+            "51.4815483",
+            "-0.0345309",
+            "-0.03352"
+        ],
+        "polygonpoints": [
+            [
+                "-0.0341018",
+                "51.4815483"
+            ],
+            [
+                "-0.0343267",
+                "51.4813088"
+            ],
+            [
+                "-0.0343702",
+                "51.4812686"
+            ],
+            [
+                "-0.0345309",
+                "51.48111"
+            ],
+            [
+                "-0.0341747",
+                "51.480705"
+            ],
+            [
+                "-0.034063",
+                "51.4804833"
+            ],
+            [
+                "-0.0339473",
+                "51.4801906"
+            ],
+            [
+                "-0.0338088",
+                "51.4799539"
+            ],
+            [
+                "-0.03352",
+                "51.4796338"
+            ]
+        ],
+        "lat": "51.480705",
+        "lon": "-0.0341747",
+        "display_name": "Arklow Road, Hughesfield Estate, New Cross, London Borough of Lewisham, 伦敦, Greater London, 英格兰, SE14 6FB, 英国",
+        "class": "highway",
+        "type": "residential",
+        "importance": 0.001,
+        "address": {
+            "road": "Arklow Road",
+            "neighbourhood": "Hughesfield Estate",
+            "suburb": "New Cross",
+            "city": "伦敦",
+            "state_district": "Greater London",
+            "state": "英格兰",
+            "postcode": "SE14 6FB",
+            "country": "英国",
+            "country_code": "gb"
+        }
+    }
+]

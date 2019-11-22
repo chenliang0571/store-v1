@@ -13,6 +13,8 @@ import { PromotionComponent } from './promotion/promotion.component';
 import { CssDemoComponent } from './css-demo/css-demo.component';
 import { MaterialModule } from './material-module';
 import { StoreBarComponent } from './store-bar/store-bar.component';
+import { HomeComponent } from './home/home.component';
+import { StoreDetailComponent } from './store-detail/store-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { StoreBarComponent } from './store-bar/store-bar.component';
     CategoryComponent,
     PromotionComponent,
     CssDemoComponent,
-    StoreBarComponent
+    StoreBarComponent,
+    HomeComponent,
+    StoreDetailComponent
   ],
   imports: [
     BrowserModule,

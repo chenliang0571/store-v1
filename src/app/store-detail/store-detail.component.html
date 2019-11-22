@@ -1,0 +1,12 @@
+<h2>{{menu.restaurant}}</h2>
+<mat-list>
+    <div *ngFor="let c of menu.menus">
+        <h3 mat-subheader>{{c.category}}</h3>
+        <mat-list-item *ngFor="let r of c.recipes">
+            <mat-icon mat-list-icon>restaurant</mat-icon>
+            <h4 mat-line>{{r.title}}</h4>
+            <p mat-line> {{r.ingredient}} </p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </div>
+</mat-list>

@@ -9,7 +9,7 @@ import { LbsService } from '../lbs.service';
 export class LocationBarComponent implements OnInit {
 
   constructor(
-    private lbsService: LbsService
+    public lbsService: LbsService
   ) { }
 
   public ngOnInit(): void {

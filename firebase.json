@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "an-angular-restaurant",
     "public": "dist/store-v1",
     "ignore": [
       "firebase.json",

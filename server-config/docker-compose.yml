@@ -1,0 +1,27 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:12.1
+    restart: always
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./postgres.conf:/etc/postgresql/postgresql.conf
+    ports:
+      - 5432:5432
+    environment:
+      # POSTGRES_USER: restaurant
+      POSTGRES_PASSWORD: O0y27ds5
+      # POSTGRES_DB: postgres
+      # POSTGRES_INITDB_ARGS
+      # POSTGRES_INITDB_WALDIR
+      # PGDATA: /var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  db-data:

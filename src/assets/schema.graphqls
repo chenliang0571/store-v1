@@ -1,0 +1,36 @@
+type Query {
+    menuByGeohash(geohash: ID!): [Recipe]
+    restaurantByGeohash(geohash: ID!): Restaurant
+}
+
+type Mutation {
+  setRestaurant(restaurant: Restaurant): Restaurant
+  setRecipe(recipe: Recipe): Recipe
+}
+
+type Restaurant {
+    geohash: ID!
+    address: String!
+    business_hour: String
+    gps: String
+    name: String
+    phone: String
+    postcode: String
+    tags: [String]
+    website: String
+    images:[String]
+    menu: [Recipe]
+}
+type Recipe {
+    name: ID!
+    # menu: String   # todo: summer/winter menu
+    category: String
+    discount: String
+    ingredient: [String]
+    price: String!
+    options: [Option]
+}
+type Option {
+    name: ID
+    price: Int
+}

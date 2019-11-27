@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '../store';
+import { Store } from '../objects';
 
 @Component({
   selector: 'app-promotion',

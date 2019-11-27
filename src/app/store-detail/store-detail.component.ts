@@ -1,32 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-
-interface Menu {
-  restaurant: string;
-  address: string;
-  geohash: string;
-  image_url: string;
-  rating: number;
-  menus: Category[];
-}
-interface Category {
-  category: string;
-  description: string;
-  tags: string[];
-  recipes: Recipe[];
-}
-interface Recipe {
-  title: string;
-  ingredient: string;
-  price: number;
-  options: RecipeOption[];
-}
-interface RecipeOption {
-  name: string;
-  oper: string;
-  price: number;
-}
+import { Menu } from '../objects';
 
 @Component({
   selector: 'app-store-detail',
